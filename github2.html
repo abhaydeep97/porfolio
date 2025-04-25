@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhay Deep - Portfolio</title>
+  <style>
+  /* Basic Reset */
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* Dark gray for better readability */
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  }
+
+  /* Blue and White Background */
+  body::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+  45deg,
+  #4299e1, #6b46c1, #2b6cb0, #1a365d
+  );
+  background-size: 400% 400%;
+  animation: rainbow 15s ease infinite;
+  z-index: -1;
+  opacity: 0.15;
+  filter: blur(5px);
+  }
+
+  @keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+  }
+
+  nav {
+  background: #1a365d; /* Darker blue for navigation */
+  overflow: hidden;
+  }
+
+  nav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+  background-color: #4299e1; /* Lighter blue on hover */
+  }
+
+  header {
+  background: linear-gradient(90deg, #1a365d, #2b6cb0); /* Gradient header */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  }
+
+  header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  }
+
+  header p {
+  font-size: 1.2rem;
+  }
+
+  .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 40px;
+  }
+
+  .card {
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent white cards */
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  h2 {
+  color: #1a365d; /* Dark blue for headings */
+  margin-bottom: 10px;
+  }
+
+  ul {
+  padding-left: 20px;
+  }
+
+  a {
+  color: #4299e1; /* Lighter blue for links */
+  text-decoration: none;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+
+  footer {
+  background-color: #111827; /* Dark background for footer */
+  color: #f9fafb;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+  header h1 {
+  font-size: 2rem;
+  }
+  }
+  </style>
+ </head>
+ <body>
+
+  <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+  <h1>Abhay Deep</h1>
+  <p>Computer Science Engineering Student | Software Developer | Tech Enthusiast</p>
+  </header>
+
+  <div class="container">
+  <section class="card" id="about">
+  <h2>About Me</h2>
+  <p>
+  Hi! I'm Abhay Deep, a passionate CSE student driven by curiosity and a love for building impactful tech solutions.
+  I believe in learning continuously, adapting fast, and collaborating with others to bring innovative ideas to life. 
+  </p>
+  </section>
+
+  <section class="card" id="skills">
+  <h2>Skills</h2>
+  <ul>
+  <li><strong>Technical:</strong> C++, Python, HTML, CSS, JavaScript</li>
+  <li><strong>Soft Skills:</strong> Communication, Teamwork, Leadership</li>
+  </ul>
+  </section>
+
+  <section class="card">
+  <h2>Projects</h2>
+  <ul>
+  <li><strong>Portfolio Website:</strong> Developed using HTML & CSS to showcase my skills and projects.</li>
+  <li><strong>Credit Scoring & Risk Assessment App:</strong> <span style="color: orange;">(Work in Progress)</span> -A leading bank utilized neural networks to assess customer creditworthiness. The
+    AI-based credit scoring model processed non-traditional data sources, including social
+    behavior, increasing the approval rate for low-risk borrowers while minimizing default rates
+    by 20%.</li>
+  </ul>
+  </section>
+
+  <section class="card">
+  <h2>Education</h2>
+  <p><strong>B.Tech in Computer Science Engineering</strong><br>
+  Lamrin Tech Skills University (Ongoing)</p>
+  <p><strong>12th Grade:</strong><br>
+  Shree Lalta Parsad Paraswati Vidya Mandir Inter College</p>
+  </section>
+
+  <section class="card" id="contact">
+  <h2>Contact</h2>
+  <p><strong>Email:</strong> abhaydeep4545@gmail.com</p>
+  <p><strong>Phone:</strong> +91-9759907608</p>
+  <p><strong>GitHub:</strong> <a href="https://github.com/abhaydeep97" target="_blank">github.com/abhaydeep97</a></p>
+  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhay-deep-3355b92b8/" target="_blank">linkedin.com/in/abhay-deep</a></p>
+  </section>
+  </div>
+
+  
+
+ </body>
+ </html>
